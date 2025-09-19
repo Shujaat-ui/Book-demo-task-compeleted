@@ -6,10 +6,29 @@
   height: 40vmin;
   pointer-events: none;
 }
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* screen ke height ke barabar */
+}
 
+.app-content {
+  flex: 1; /* content jitna bacha utna jagah le */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    font-size: 1.5rem;
+    padding: 15px 5px;
   }
 }
 
